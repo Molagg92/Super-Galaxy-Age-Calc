@@ -1,4 +1,4 @@
-import HomoSapien from "../src/calc.js";
+import HomoSapien from "../src/sapien.js";
 
 describe('HomoSapien', () => {
   test('should return erik as 30 and 1992', () => {
