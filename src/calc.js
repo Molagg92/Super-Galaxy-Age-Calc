@@ -1,11 +1,4 @@
-// function sum(a, b) {
-//   return a + b;
-// }
-
-// module.exports = sum
-
-
-export default {
+export default class HomoSapien {
   constructor(age, birthYear){
     this.age = age,
     this.birthYear = birthYear;
