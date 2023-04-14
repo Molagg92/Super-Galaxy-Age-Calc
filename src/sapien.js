@@ -3,7 +3,7 @@ export default class HomoSapien {
     this.age = age,
     this.birthYear = birthYear;
   } mercuryCalc() {
-    const mercuryAge = this.age * 0.24;
+    const mercuryAge = Math.round(this.age * 0.24);
     return mercuryAge;
   }
 }

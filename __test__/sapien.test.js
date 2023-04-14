@@ -7,3 +7,13 @@ describe('HomoSapien', () => {
     expect(erik.birthYear).toEqual(1992);
   })
 });
+
+
+
+describe('HomoSapien', () => {
+  test('should return eriks age in Mercury years', () => {
+    const erik = new HomoSapien(30, 1992);
+    const mercuryAge = erik.mercuryCalc();
+    expect(mercuryAge).toEqual(7);
+  });
+});
