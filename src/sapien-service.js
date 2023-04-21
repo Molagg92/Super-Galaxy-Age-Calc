@@ -5,7 +5,7 @@ export default class HomoSapien {
     this.birthYear = birthYear;
   } superGalaxyCalc() {
     const today = 2023;
-    const input = document.getElementById('inputBtn').value;
+    const input = document.getElementById('inputBtn');
     const inputBday = parseInt(input);
     if (inputBday < this.age) {
       const pastBday = Math.round(this.birthYear + inputBday);
