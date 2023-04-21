@@ -10,10 +10,15 @@ describe('HomoSapien', () => {
 
 
 
-describe('HomoSapien', () => {
-  test('should return eriks age in Mercury years 125', () => {
+describe('SuperGalaxyCalc', () => {
+  test('should return how many yeas have passed since my 10th bday. 88', () => {
     const erik = new HomoSapien(30, 1992);
-    const mercuryAge = erik.superGalaxyCalc();
-    expect(mercuryAge).toEqual(125);
+    const today = 2023;
+    const inputBday = 10;
+    const pastBday = Math.round(erik.birthYear + inputBday);
+    const yearsPastSince = Math.round(today - pastBday);
+    const mercuryYearsPastSince = Math.round(yearsPastSince / 0.24);
+    erik.superGalaxyCalc();
+    expect(mercuryYearsPastSince).toEqual(88);
   });
 });
